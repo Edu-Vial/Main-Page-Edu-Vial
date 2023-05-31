@@ -25,6 +25,8 @@ main{
     padding: 10px;
 }
 .edu{
+    background: transparent;
+    backdrop-filter: blur(15px);
     display: grid;
     border: 0.5px solid;
     border-radius: 20px;
@@ -34,6 +36,10 @@ main{
     padding: 30px;
     width: 900px;
     height: 500px;
+}
+.edu h2{
+    color: white;
+    font-size: 30px;
 }
 .vial{
     display: grid;
