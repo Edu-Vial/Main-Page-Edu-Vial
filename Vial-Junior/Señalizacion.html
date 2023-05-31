@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Señalizacion</title>
+</head>
+  <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'arima',cursive;
+        }
+header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	justify-items: start;
+	background-color: #b0f2c2;
+}
+header .logo
+{
+	margin: 0;
+	padding: 25px 30px;
+	font-weight: bold;
+	color: #00C5FF;
+	font-size: 1.6em;
+}
+header .container
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+header .nav
+{
+	display: flex;
+	flex-direction: column;
+    text-align: center;
+	padding-bottom: 25px;
+}
+header a
+{
+	padding: 5px 12px;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	transition: all 1s;
+	font-size: 20px;
+}
+header a:hover
+{
+	transform: scale(1.1);
+}
+header h2
+{
+}
+.boxa{
+	text-align: center;
+	border: 2px solid rgb(252, 71, 71);
+	border-radius: 30px;
+	background: rgb(214, 3, 3);
+	display: inline-flex;
+	align-items: center;
+}
+.boxa:hover{
+	background-color: rgb(245, 13, 13);
+}
+	.boxani3{
+	text-align: center;
+	border: 2px solid rgb(252, 71, 71);
+	border-radius: 30px;
+	display: inline-flex;
+	align-items: center;
+	margin-left: 20px;
+	color: white;
+	background: rgb(214, 3, 3);
+}
+.boxani3:hover{
+	background-color: rgb(245, 13, 13);
+}
+.boxani{
+	text-align: center;
+	border: 2px solid rgb(252, 71, 71);
+	border-radius: 30px;
+	background: rgb(214, 3, 3);
+	display: inline-flex;
+	align-items: center;
+	margin-left: 30px;
+}
+.boxani:hover{
+	background-color: rgb(245, 13, 13);
+}
+nav{
+	display: inline-flex;
+	align-items: center;
+	padding: 10px;
+	animation: desplazar;
+            transform: translateX(-300%);
+            animation-duration: 0.5s;
+            animation-delay: 0.2s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes desplazar{
+            from{
+                transform: translateX(-300%);
+            }
+            to{
+                transform: translateX(0);
+            }
+        }
+		.logo{
+			animation: desplazar;
+            transform: translateX(-200%);
+            animation-duration: 0.5s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+			
+        }
+        @keyframes desplazar{
+            from{
+                transform: translateX(-200%);
+            }
+            to{
+                transform: translateX(0);
+            }
+        }
+		.tiposdetransporte{
+			
+		}
+		.boxtipos{
+			border: 2px solid;
+		}
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-items: center;
+        }
+        body{
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: rgb(255, 136, 0);
+        }
+        .card{
+
+            position: relative;
+            margin-bottom: 40px;
+            width: 300px;
+            height: 350px;
+            margin-left: 50px;
+            
+        }
+        .card .face{
+            display: grid;
+            justify-items: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border: 2px solid #000;
+            border-radius: 25px;
+            overflow: hidden;
+            transition: .5s;
+        }
+        .card .front{
+            transform: perspective(600px) rotateY(0deg);
+            box-shadow: o 5px 10px #000;
+        }
+        .card .front img{
+            position: absolute;
+            width: 95%;
+            margin-top: 10px;
+            object-fit: cover;
+        }
+        .card .front h3{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            color: #fff;
+            background: rgba(0,0,0,.4);
+            text-align: center;
+            font-size: 20px;
+        }
+        .card .back{
+            transition: all 0.8s;
+            transform: perspective(600px) rotateY(100deg);
+            background-color: #48bd67;
+            padding: 15px;
+            color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .card .back .link{
+            display: none;
+            border-top: solid 1px #f3f3f3;
+            height: 50px;
+            line-height: 50px;
+        }
+        .card .back .link a{
+
+            color: #f3f3f3;
+        }
+        .card .back h3{
+            font-size: 30px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+        }
+        .card .back p{
+            color: #f3f3f3;
+        }
+        .card:hover .front{
+            transform: perspective(600px) rotateY(100deg);
+        }.card:hover .back{
+            transform: perspective(600px) rotateY(360deg);
+        }
+
+    </style>
+<body>
+    <header id="header">
+        <div class="container">
+                <section class="container">
+                <a href="primaria.html" id="boxa"><p class="logo">EduVial Jr</p></a>
+                </div>
+                <div>
+                    <nav>
+                        <a href="#Sobre-nosotros" class="boxani3"><img src="img/personita.png" width="20px"> SOBRE NOSOTROS</a>
+                        <a href="#final" class="boxani"><img src="img/juego.png" width="30px" height="30px"> JUEGO</a>
+                    </nav>
+                </div>
+            </section>
+            </div>
+    </header>
+    <br>
+    <div class="container">
+        <div class="card">
+            <div class="face front">
+                <img src="img/stop.png" width="100px">
+                <h3>DETENERCE</h3>
+            </div>
+            <div class="face back">
+                <h3>Detenerce</h3>
+                <p>ESTA SEÑAL TE INDICA CUANDO TIENES QUE DETENERTE POR EJEMPLO EN LOS SEMAFOROS</p>
+                <div class="link">
+                    <a href="#">Detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="img/prohibido-estacionar.png" width="100px">
+                <h3>PROHIBIDO ESTACION</h3>
+            </div>
+            <div class="face back">
+                <h3>PROHIBIDO ESTACIONAR</h3>
+                <p>ESTA SEÑAL INDICA CUANDO NO PUEDES ESTACIONAR EN ALGUNOS LUGARES </p>
+                <div class="link">
+                    <a href="#">Detalles</a>
+                </div>
+            </div>
+        </div>
+           <div class="card">
+            <div class="face front">
+                <img src="img/contramano.png">
+                <h3>CONTRAMANO</h3>
+            </div>
+            <div class="face back">
+                <h3>CONTRAMANO</h3>
+                <p>ESTA SEÑAL TE INDICA CUANDO UNA CALLE ESTA EN CONTRAMANO(UN SOLO SENTIDO)</p>
+                <div class="link">
+                    <a href="#">Detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="img/tren.png">
+                <h3>TREN CERCA</h3>
+            </div>
+            <div class="face back">
+                <h3>TREN CERCA</h3>
+                <p>ESTA SEÑAL INDICA CUANDO UN TREN ESTA CERCA O ESTA PASANDO</p>
+                <div class="link">
+                    <a href="#">Detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="img/escuela.png">
+                <h3>ESCUELA EN FRENTE</h3>
+            </div>
+            <div class="face back">
+                <h3>ESCUELA EN FRENTE</h3>
+                <p>ESTA SEÑAL INDICA QUE HAY UNA ESCUELA EN FRENTE O CERCA</p>
+                <div class="link">
+                    <a href="#">Detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="img/inco.png">
+                <h3>INCORPORACION LATERAL</h3>
+            </div>
+            <div class="face back">
+                <h3>INCORPORACION LATERAL</h3>
+                <p>ESTA SEÑAL INDICA QUE VA AH HABER UNA INCORPORACION LATELAS EN UN RUTA O CARRETERA</p>
+                <div class="link">
+                    <a href="#">Detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="img/auto.png">
+                <h3>PROHIBIDO AUTOS</h3>
+            </div>
+            <div class="face back">
+                <h3>PROHIBIDO AUTOS</h3>
+                <p>ESTA SEÑAL INDICA QUE ESTA PROHIBIDO LA CIRCULACION DE CUALQUIER TIPO DE AUTOS EN AMBOS SENTIDOS</p>
+                <div class="link">
+                    <a href="#">Detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="img/pro-bici.png">
+                <h3>PROHIBIDO BICICLETAS</h3>
+            </div>
+            <div class="face back">
+                <h3>PROHIBIDO BICICLETAS</h3>
+                <p>ESTA SEÑAL INDICA QUE ESTA RESTRINGIDA LA CIRCULACION DE BICICLETAS EN LUGARES DONDE SE ENCUENTRAN LAS MISMAS</p>
+                <div class="link">
+                    <a href="#">Detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <img src="img/pro-camion.png">
+                <h3>PROHIBIDO CAMIONES</h3>
+            </div>
+            <div class="face back">
+                <h3>PROHIBIDO CAMIONES</h3>
+                <p>ESTA SEÑAL INDICA QUE ESTA PROHIBIDO EL TRANSITO PESADO COMO LOS CAMIONES O COLECTIVOS</p>
+                <div class="link">
+                    <a href="#">Detalles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
