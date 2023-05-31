@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: all 1s;
 }
 body{
     background:url('images/bsas.png') no-repeat center center; 
@@ -25,22 +27,28 @@ main{
 .edu{
     display: grid;
     border: 0.5px solid;
+    border-radius: 20px;
     text-align: center;
     justify-content: center;
     justify-items: center;
     padding: 30px;
-    width: 700px;
+    width: 900px;
     height: 500px;
 }
 .vial{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
+    align-items: center;
 }
 .vial h2{
     color: white;
+    font-size: 40px;
 }
 .vial p{
     color: white;
+    font-size: 20px;
+    padding: 10px;
 }
 .vial a{
     color: black;
@@ -48,11 +56,17 @@ main{
 }
 .edu h1{
     color:white;
-    font-size: 30px;
+    font-size: 60px;
 }
 .edu button{
-    width: 150px;
+    width: 180px;
     padding: 10px;
     border: none;
     border-radius: 10px;
+    background-color: white;
+    transition: all 1s;
+}
+.edu button:hover{
+    transform: scale(1.1);
+    background-color: rgb(189, 180, 180);
 }
