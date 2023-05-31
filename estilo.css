@@ -26,7 +26,7 @@ main{
 }
 .edu{
     background: transparent;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(9px);
     display: grid;
     border: 0.5px solid;
     border-radius: 20px;
@@ -36,6 +36,24 @@ main{
     padding: 30px;
     width: 900px;
     height: 500px;
+}
+.seccion1{
+    transition: all 2s;
+}
+.seccion1:hover{
+    transform: scale(1.1);
+}
+.seccion2{
+    transition: all 2s;
+}
+.seccion2:hover{
+    transform: scale(1.2);
+}
+.seccion3{
+    transition: all 2s;
+}
+.seccion3:hover{
+    transform: scale(1.1);
 }
 .edu h2{
     color: white;
