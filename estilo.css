@@ -41,19 +41,19 @@ main{
     -moz-box-shadow: 7px 10px 30px 0px rgba(0,0,0,0.75);
 }
 .seccion1{
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .seccion1:hover{
     transform: scale(1.1);
 }
 .seccion2{
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .seccion2:hover{
     transform: scale(1.1);
 }
 .seccion3{
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .seccion3:hover{
     transform: scale(1.1);
