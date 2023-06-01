@@ -34,7 +34,7 @@ main{
     justify-content: center;
     justify-items: center;
     padding: 30px;
-    width: 900px;
+    width: 1000px;
     height: 500px;
 }
 .seccion1{
@@ -88,9 +88,7 @@ main{
     border: none;
     border-radius: 10px;
     background-color: white;
-    transition: all 1s;
 }
 .edu button:hover{
-    transform: scale(1.1);
     background-color: rgb(189, 180, 180);
 }
