@@ -117,19 +117,61 @@ main {
     background-color: rgb(189, 180, 180);
 }
 
-@media (width: 768px) {
+@media (width: 320px) {
+    body {
+        background-size: auto;
+    }
+
+    .container {
+        padding-top: 500px;
+    }
 
     .edu {
-        width: 700px;
+        width: 300px;
+        height: auto;
     }
 
     .edu h1 {
-        font-size: 30;
+        font-size: 30px;
+    }
+
+    .edu h2 {
+        font-size: 20px;
     }
 
     .vial {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        padding: 30px;
+    }
+}
+@media (width: 425px) {
+    body {
+        background-size: auto;
+    }
+
+    .container {
+        padding-top: 500px;
+    }
+
+    .edu {
+        width: 300px;
+        height: auto;
+    }
+
+    .edu h1 {
+        font-size: 30px;
+    }
+
+    .edu h2 {
+        font-size: 20px;
+    }
+
+    .vial {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 30px;
     }
 }
