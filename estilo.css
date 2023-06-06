@@ -147,7 +147,7 @@ main {
     }
 }
 
-@media (width: 375px) {
+@media (max-width: 767px) {
     body {
         background-size: auto;
     }
@@ -176,8 +176,7 @@ main {
         padding: 30px;
     }
 }
-
-@media (width: 425px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     body {
         background-size: auto;
     }
@@ -205,4 +204,4 @@ main {
         grid-template-rows: 1fr 1fr 1fr;
         padding: 30px;
     }
-}
+  }
