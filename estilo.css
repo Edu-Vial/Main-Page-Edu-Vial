@@ -98,3 +98,19 @@ main{
 .edu button:hover{
     background-color: rgb(189, 180, 180);
 }
+@media (width: 768px) {
+    body{
+        background-size: 100%;
+    }
+    .edu{
+        width: 600px;
+    }
+    .edu h1{
+        font-size: 30;
+    }
+	.vial{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
