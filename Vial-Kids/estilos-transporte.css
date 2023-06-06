@@ -709,7 +709,11 @@ section{
     background: url(icono/facebook.png);
     background-size: 95%;
 }
-
+.footer .container .info{
+    display: grid;
+    grid-template-columns: 900px 1000px;
+    text-align: none;
+}
 @-moz-keyframes myfirst {
     0% {
       left: -25%;
