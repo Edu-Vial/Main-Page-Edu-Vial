@@ -1,30 +1,34 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     transition: all 1s;
 }
-body{
-    background:url('images/bsas.png') no-repeat center center; 
-    background-size:cover;
+
+body {
+    background: url('images/bsas.png') no-repeat center center;
+    background-size: cover;
     width: 100%;
     height: 90vh;
 }
-main{
+
+main {
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     height: 100%;
 }
-.container{
+
+.container {
     text-align: center;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
-.edu{
+
+.edu {
     background: transparent;
     backdrop-filter: blur(9px);
     display: grid;
@@ -36,79 +40,94 @@ main{
     padding: 30px;
     width: 1200px;
     height: 500px;
-    box-shadow: 7px 10px 30px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 7px 10px 30px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 7px 10px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 10px 30px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 7px 10px 30px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 10px 30px 0px rgba(0, 0, 0, 0.75);
 }
-.seccion1{
+
+.seccion1 {
     transition: all 0.5s;
 }
-.seccion1:hover{
+
+.seccion1:hover {
     transform: scale(1.1);
 }
-.seccion2{
+
+.seccion2 {
     transition: all 0.5s;
 }
-.seccion2:hover{
+
+.seccion2:hover {
     transform: scale(1.1);
 }
-.seccion3{
+
+.seccion3 {
     transition: all 0.5s;
 }
-.seccion3:hover{
+
+.seccion3:hover {
     transform: scale(1.1);
 }
-.edu h2{
+
+.edu h2 {
     color: white;
     font-size: 30px;
 }
-.vial{
+
+.vial {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
     align-items: center;
 }
-.vial h2{
+
+.vial h2 {
     color: white;
     font-size: 40px;
 }
-.vial p{
+
+.vial p {
     color: white;
     font-size: 20px;
     padding: 10px;
 }
-.vial a{
+
+.vial a {
     color: black;
     text-decoration: none;
 }
-.edu h1{
-    color:white;
+
+.edu h1 {
+    color: white;
     font-size: 60px;
 }
-.edu button{
+
+.edu button {
     width: 180px;
     padding: 10px;
     border: none;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 7px 10px 30px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 7px 10px 30px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 7px 10px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 10px 30px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 7px 10px 30px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 10px 30px 0px rgba(0, 0, 0, 0.75);
 }
-.edu button:hover{
+
+.edu button:hover {
     background-color: rgb(189, 180, 180);
 }
+
 @media (width: 768px) {
-    body{
-        background-size: 100%;
+
+    .edu {
+        width: 700px;
     }
-    .edu{
-        width: 600px;
-    }
-    .edu h1{
+
+    .edu h1 {
         font-size: 30;
     }
-	.vial{
+
+    .vial {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
