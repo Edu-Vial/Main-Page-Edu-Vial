@@ -184,15 +184,16 @@ main {
         padding: 30px;
     }
 }
+
 @media (min-width: 768px) and (max-width: 1023px) {
     body {
         width: 100%;
-        height: 100%;
+        height: 778px;
     }
 
     .container {
-        padding-top: 0;
-        margin-top: 10px;
+        max-width: 800px;
+        padding: 15px;
     }
 
     .edu {
@@ -211,4 +212,71 @@ main {
     .seccione3 img {
         width: 70px;
     }
-  }
+}
+
+@media (min-width: 1024px) {
+    body {
+        width: 100%;
+        height: 770px;
+    }
+
+    .container {
+        max-width: 800px;
+        padding: 15px;
+    }
+
+    .edu {
+        width: 700px;
+        height: auto;
+    }
+
+    .edu h1 {
+        font-size: 30px;
+    }
+
+    .edu h2 {
+        font-size: 20px;
+    }
+
+    .seccione3 img {
+        width: 70px;
+    }
+
+    .container {
+        max-width: 1200px;
+        padding: 20px;
+    }
+}
+@media (min-width: 1440px) {
+    body {
+        width: 100%;
+        height: 770px;
+    }
+
+    .container {
+        max-width: 800px;
+        padding: 15px;
+    }
+
+    .edu {
+        width: 900px;
+        height: 600px;
+    }
+
+    .edu h1 {
+        font-size: 50px;
+    }
+
+    .edu h2 {
+        font-size: 40px;
+    }
+
+    .seccion3 img {
+        width: 95px;
+    }
+
+    .container {
+        max-width: 1200px;
+        padding: 20px;
+    }
+}
