@@ -178,6 +178,13 @@ main {
         font-size: 20px;
     }
 
+    .seccion1 {
+        padding: 10px;
+    }
+    .seccion1 button {
+        padding: 15px;
+    }
+
     .seccione3 img {
         width: 70px;
     }
