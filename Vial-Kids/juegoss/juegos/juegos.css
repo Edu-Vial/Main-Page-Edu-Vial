@@ -1,0 +1,41 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+body{
+   background: url(img/calle2.jpg);
+   background-repeat: no-repeat;
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.container-auto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auto{
+    position: absolute;
+    top: 78vh;
+    
+}
+
+.button{
+    display: inline-block;
+    text-items: center;
+    position: relative;
+}
+
+/*.opcion1:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}*/
+

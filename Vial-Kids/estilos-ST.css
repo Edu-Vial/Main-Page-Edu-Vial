@@ -19,13 +19,13 @@ nav{
 }
 
 .enlace{
-    position: absolute;
-    padding: 20px 50px;
+  position: absolute;
+  padding: 0px 25px;
 }
 
 .logo{
-    height: 50px;
-    display: inline-flex;
+  height: 85px;
+  display: inline-flex;
 }
 
 nav ul{
@@ -164,31 +164,31 @@ nav ul li{
 
 .btn-1{
     background: url(señales/contramano-removebg-preview.png);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .btn-2{
     background: url(señales/no_estacionar-removebg-preview.png);
-   background-size: 90%;
+    background-size:100%;
     background-repeat: no-repeat;
 }
 
 .btn-3{
     background: url(señales/no_girar_a_la_derecha-removebg-preview.png);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .btn-4{
     background: url(señales/no_girar_izquierda-removebg-preview.png);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .btn-5{
     background: url(señales/pare-removebg-preview.png);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -203,37 +203,37 @@ nav ul li{
 
 .btn-6{
     background: url(señales/cruze_ferroviario-removebg-preview.png);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .btn-7{
     background: url(señales/cruze_de_peatones-removebg-preview.png);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .btn-8{
     background: url(señales/atencion.jpg);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .btn-9{
     background: url(señales/escolares-removebg-preview.png);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .btn-10{
     background: url(señales/niños-removebg-preview.png);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .btn-11{
     background: url(señales/rotonda-removebg-preview.png);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -248,19 +248,19 @@ nav ul li{
 
 .btn-12{
     background: url(señales/permitido_estacionar-removebg-preview.png);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .btn-13{
     background: url(señales/permitido_girar_derecha-removebg-preview.png);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .btn-14{
     background: url(señales/permitido_grar_izquierda-removebg-preview.png);
-    background-size: 90%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -304,50 +304,57 @@ nav ul li{
   display: block;
 }
 
-.footer .icon-redSocial{
-  text-align: right;
-  padding-left: 0;
-  margin-bottom: 0;
+
+.icon-redSocial{
+  display: flex;
+  justify-content: center;
   list-style: none;
 }
 
-.footer .icon-redSocial a{
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  margin-left: 6px;
-  margin-right: 8px;
-  border-radius: 100%;
-  background-color: #969292;
-  color: #5e5e5e;
-  font-size: 16px;
-  display: inline-block;
-  text-align: center;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
-}
-
 .icon-redSocial li{
-  display: inline-block;
-  margin-bottom: 4px;
+  margin: 0 10px;
 }
 
-.icon-redSocial li.title{
-  margin-right: 15px;
-  text-transform: uppercase;
-  color: #8a9196;
-  font-weight: 700;
-  font-size: 13px;
+.icon-redSocial li a{
+  font-size: 25px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: 0.5s ease;
+  background: linear-gradient(45deg, #ff3846, #faa320, #fffb16);
 }
 
-.icon-redSocial.size-sm a
-{
-line-height:34px;
-height:34px;
-width:34px;
-font-size:14px
+.icon-redSocial li a:hover{
+  background-image: linear-gradient(45deg, #ff3846, #faa320, #fffb16);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
 }
+
+.icon-redSocial li a::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff3846, #faa320, #fffb16);
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+
+.icon-redSocial li a:hover::before{
+  transform: scale(0);
+}
+
 
 .footer-img-fondo{
   background: url(fondos/fondo-footer.png) scroll center 0;
@@ -387,10 +394,6 @@ font-size:14px
     overflow-x: hidden;
 }
 
-.facebook {
-  background: url(icono/facebook.png);
-  background-size: 95%;
-}
 
 @-moz-keyframes myfirst {
   0% {
@@ -417,22 +420,6 @@ font-size:14px
   100% {
     left: 100%;
   }
-}
-
-.icon-redSocial a.facebook:hover{
-  background-color: #15619e;
-}
-
-.icon-redSocial a.instagram:hover{
-  background-color: #db2cc9;
-}
-
-.icon-redSocial a.twitter:hover{
-  background-color: #2d7bbb;
-}
-
-.footer a:hover{
-  color: #15619e;
 }
 
 
@@ -528,6 +515,9 @@ font-size:14px
     .boton-fondo{
         height: 250px;
         
+    }
+    .boton{
+      height: 30px;
     }
 }
 

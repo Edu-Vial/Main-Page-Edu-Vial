@@ -1,0 +1,146 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.body{
+    background: url(img/calle2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 2px;
+}
+
+.btn-nube{
+    height: 120px;
+    width: 280px;
+    border: none;
+    background: url(img/nube.png);
+    background-size: 280px 120px;
+    margin-top: 100px;
+}
+
+.nube{
+    width: 100%;
+    text-align: center;
+}
+
+.opcion1{
+    background: url(img/bici.png);
+    background-size: 160px 130px;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 160px;
+    border: none;
+    position: absolute;
+    margin-left: 5%;
+    top: 68vh;
+}
+
+.opcion2{
+    background: url(img/colectivo.png);
+    background-size: 550px 190px;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 550px;
+    border: none;
+    position: absolute;
+    margin-left: 21%;
+    top: 55vh;
+}
+
+.opcion3{
+    background: url(img/auto1.png);
+    background-size: 370px 130px;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 370px;
+    border: none;
+    position: absolute;
+    margin-left: 70%;
+    top: 65vh;
+}
+
+
+.btn-nube:hover{
+    transform: scale(1.25);
+    transition: 0.7s;
+}
+
+.opcion1:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.opcion2:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.opcion3:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+
+@media (max-width: 1130px){
+    .opcion1{
+        background-size: 130px 110px;
+        height: 130px;
+        width: 160px;
+        margin-left: 3%;
+        top: 70vh;
+    }
+
+    .opcion2{
+        background-size: 410px 150px;
+        height: 150px;
+        width: 410px;
+        margin-left: 21%;
+        top: 61vh;
+    }
+
+    .opcion3{
+        background-size: 240px 90px;
+        height: 90px;
+        width: 240px;
+        margin-left: 72%;
+        top: 70vh;
+    }
+}
+
+@media (max-width: 827px){
+    .body{
+        background: url(img/call3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        padding-top: 2px;
+    }
+    .btn-nube{
+        margin-top: 65px;
+    }
+    .opcion1{
+        background-size: 75px 53px;
+        height: 53px;
+        width: 75px;
+        margin-left: 1%;
+        top: 54vh;
+    }
+
+    .opcion2{
+        background-size: 160px 60px;
+        height: 60px;
+        width: 160px;
+        margin-left: 23%;
+        top: 50vh;
+    }
+
+    .opcion3{
+        background-size: 100px 33px;
+        height: 33px;
+        width: 100px;
+        margin-left: 71%;
+        top: 55vh;
+    }
+}

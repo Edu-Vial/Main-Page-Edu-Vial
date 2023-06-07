@@ -6,13 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vial Kids</title>
     <link rel="stylesheet" href="estilos-transporte.css">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <style>
-        .container-Transporte{
-            background-image: url(img/calle.png);
-        }
-        
-    </style>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/fontawesome-all.min.css">
 </head> 
 <body>
     <nav id="nav">
@@ -21,7 +18,7 @@
             <i class="fas fa-bars"></i>
         </label>
         <a href="#" class="enlace">
-            <img src="logo/logo2.png" alt="" class="logo">
+            <img src="icono/icono.png" alt="" class="logo">
         </a>
         <ul>
             <li><a class="active btm" href="index.html" id="btn2">
@@ -32,9 +29,9 @@
                 <img src="icono/señaltransito.png" alt="button-icon" class="icon">
                 <span class="btn-text" >Señal de Transito</span>
             </a></li>
-            <li><a class="btm" href="#" id="btn4">
+            <li><a class="btm" href="index-SV.html" id="btn4">
                 <img src="icono/seguridadVial.png" alt="button-icon" class="icon">
-                <span class="btn-text" >seguridad vial</span>
+                <span class="btn-text" >Seguridad Vial</span>
             </a></li>
             <li><a class="btm" href="index-J.html" id="btn5">
                 <img src="icono/control.png" alt="button-icon" class="icon">
@@ -55,24 +52,24 @@
      -->
     <div class="transportes">
         <div class="bici container-Transporte fondo1">
-            <button class="btn1 reproductor" onclick="sound.play()"><audio src="img/sonidos/bicicleta.mp3"></audio><p class="bicicleta">BICICLETA</p><!--<img class="imgLetra izq" src="transportes/bicicletaL.png" alt="">--></button>
-            <img class="imgTran der" src="img/bicicleta.png" alt="">
+            <button class="btn1 reproductor" onclick="sound.play()"><audio src="transportes/sonidos/bicicleta.mp3"></audio><p class="bicicleta">BICICLETA</p><!--<img class="imgLetra izq" src="transportes/bicicletaL.png" alt="">--></button>
+            <img class="imgTran der" src="transportes/bici.png" alt="">
         </div>
         <div class="moto container-Transporte fondo3">
-            <img class="imgTran izq" src="img/moto.png" alt="">
+            <img class="imgTran izq" src="transportes/moto.png" alt="">
             <button class="btn2 reproductor2" onclick="sound.play()"><audio src="transportes/sonidos/moto.mp3"></audio><p class="moto">MOTO</p></button>
         </div>
         <div class="auto container-Transporte fondo2">
             <button class="btn3 reproductor3" onclick="sound.play()"><audio src="transportes/sonidos/auto.mp3"></audio><p class="auto">AUTO</p></button>
-            <img class="imgTran der" src="img/auto.png" alt="">
+            <img class="imgTran der" src="transportes/auto.png" alt="">
         </div>
         <div class="ambulancia container-Transporte fondo3">
-            <img class="imgTran izq" src="img/ambulancia.png" alt="">
+            <img class="imgTran izq" src="transportes/ambulancia.png" alt="">
             <button class="btn4 reproductor4" onclick="sound.play()"><audio src="transportes/sonidos/ambulancia.mp3"></audio><p class="ambulancia">AMBULANCIA</p></button>
         </div>
         <div class="bomberos container-Transporte fondo1">
             <button class="btn5 reproductor5" onclick="sound.play()"><audio src="transportes/sonidos/autobomba.mp3"></audio><p class="autobomba">AUTOBOMBA</p></button>
-            <img class="imgTran der" src="img/autobomba.png" alt="">
+            <img class="imgTran der" src="transportes/bombero.png" alt="">
         </div>
         <div class="colectivo container-Transporte fondo2">
             <button class="btn6 reproductor6" onclick="sound.play()"><audio src="transportes/sonidos/colectivo.mp3"></audio><p class="colectivo">COLECTIVO</p></button>
@@ -88,6 +85,7 @@
         </div>
     </div>
     <script src="js-transportes.js"></script>
+    
     <script src="bootstrap/jquery-3.6.0.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
 </body>
@@ -95,13 +93,20 @@
 <footer class="footer">
     <div class="new_footer_top">
     <div class="container">
-        <center>
-            <div class="row info">
-            <div class="col-sm-12 col-md-9">
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
                 <h6>Sobre Nosotros</h6>
                 <p class="text-justify">Nosotros somos un grupo de estudiantes que buscamos solucionar la problematica sobre los accidentes de transito. 
                     Para ello desarrollamos <i>"VialKids"</i>, una pagina para que los más chiquitos puedan aprender todo sobre la educacion 
                     Vial interactuando con las señales de transito y los medios de transporte a traves de juegos y videos.</p>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <h6>Nuestros proyectos</h6>
+                <ul class="footer-links">
+                    <li><a href="https://soluciones-futuro.com/">-  Solve for tomorrow - Samsung </a></li>
+                    <li><a href="https://abc.gob.ar/secretarias/areas/subsecretaria-de-educacion/politicas-socioeducativas/actividades-cientificas-y-tecnologicas">-  Actividades Científicas y Tecnológicas Educativas (ACTE)</a></li>
+                </ul>
             </div>
 
             <div class="col-xs-6 col-md-3">
@@ -110,11 +115,11 @@
                     <li><a href="#">Agustin Melini</a></li>
                     <li><a href="#">Federico Signorio</a></li>
                     <li><a href="#">Martina Lopardo</a></li>
+                    <li><a href="#">Bautista Bravo</a></li>
+
                 </ul>
             </div>
         </div>
-        </center>
-        
 
     </div>
 
@@ -128,16 +133,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-sm-6 col-xs-12">
-                <p class="copyRight-text">Copyright &copy; 2017 All Rights Reserved by 
-                    <a href="#">Scanfcode</a>.
+                <p class="copyRight-text">Trabajamos con la Ley 
+                    <a href="https://www.argentina.gob.ar/normativa/nacional/ley-24449-818/texto">24.449</a>.
                 </p>
             </div>
 
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <ul class="icon-redSocial">
-                    <li><a href="#" class="facebook"><i class="Ifacebook"></i></a></li>
-                    <li><a href="#" class="instagram"><i class="Iinstagram"></i></a></li>
-                    <li><a href="#" class="twitter"><i class="Itwitter"></i></a></li>
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </div>
 

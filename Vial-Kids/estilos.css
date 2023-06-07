@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 nav{
     background: white;
     height: 80px;
@@ -13,16 +17,16 @@ nav{
 }
 
 #nav{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
 .enlace{
     position: absolute;
-    padding: 0px 50px;
+    padding: 0px 25px;
 }
 
 .logo{
-    height: 50px;
+    height: 85px;
     display: inline-flex;
 }
 
@@ -141,6 +145,16 @@ body{
     background: url(fondos/fondo-amarillo.png);
 }
 
+
+
+/* CArrusel */
+.contenedorImagen{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+
+
 /*Card*/
 .card:hover{
     transform: scale(1.03);
@@ -257,7 +271,7 @@ body{
     display: block;
 }
 
-.footer .icon-redSocial{
+/*.footer .icon-redSocial{
     text-align: right;
     padding-left: 0;
     margin-bottom: 0;
@@ -300,6 +314,56 @@ body{
   height:34px;
   width:34px;
   font-size:14px
+}*/
+
+.icon-redSocial{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.icon-redSocial li{
+    margin: 0 10px;
+}
+
+.icon-redSocial li a{
+    font-size: 25px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: 0.5s ease;
+    background: linear-gradient(45deg, #ff3846, #faa320, #fffb16);
+}
+
+.icon-redSocial li a:hover{
+    background-image: linear-gradient(45deg, #ff3846, #faa320, #fffb16);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+}
+
+.icon-redSocial li a::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff3846, #faa320, #fffb16);
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+}
+
+.icon-redSocial li a:hover::before{
+    transform: scale(0);
 }
 
 .footer-img-fondo{
@@ -340,10 +404,10 @@ body{
       overflow-x: hidden;
 }
 
-.facebook {
+/*.facebook {
     background: url(icono/facebook.png);
     background-size: 95%;
-}
+}*/
 
 @-moz-keyframes myfirst {
     0% {
@@ -372,18 +436,6 @@ body{
     }
   }
 
-.icon-redSocial a.facebook:hover{
-    background-color: #15619e;
-}
-
-.icon-redSocial a.instagram:hover{
-    background-color: #db2cc9;
-}
-
-.icon-redSocial a.twitter:hover{
-    background-color: #2d7bbb;
-}
-
 .footer a:hover{
     color: #15619e;
 }
@@ -401,7 +453,7 @@ body{
       text-align:center
     }
 
-    .icon-redSocial li.title{
+    .icon-redSocial{
         display: block;
         margin-right: 0;
         font-weight: 600;
@@ -449,6 +501,9 @@ body{
         top: 0px;
         z-index: 2;
     }
+    #sub-principio{
+        padding-top: 50px;
+    }
     ul{
         position: fixed;
         width: 100%;
@@ -474,6 +529,9 @@ body{
     .non{
         display: none;
     }
+    .icono-contenido{
+        display: none;
+    }
     #contenido{
         background: url(icono/icono.png), white;
         background-repeat: no-repeat;
@@ -481,11 +539,14 @@ body{
         background-size: 100px;
     }
     #contenido h1{
-        font-size: 20px;
+        font-size: 18px;
         margin: 20px;
     }
     #contenido p{
-        font-size: 18px;
+        font-size: 16px;
         margin: 20px;
+    }
+    .contenedorImagen{
+        margin-top: 12vh;
     }
 }
