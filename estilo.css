@@ -126,6 +126,9 @@ main {
 }
 
 @media (width: 320px) {
+    html{
+        overflow: none;
+    }
     body {
         width: 100%;
         height: 100%;
@@ -158,6 +161,9 @@ main {
 }
 
 @media (max-width: 767px) {
+    html{
+        overflow: none;
+    }
     body {
         width: 100%;
         height: 100%;
@@ -194,6 +200,9 @@ main {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+    html{
+        overflow: none;
+    }
     body {
         width: 100%;
         height: 778px;
