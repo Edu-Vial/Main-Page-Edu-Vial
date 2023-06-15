@@ -6800,11 +6800,7 @@ html.tablet .ui-to-top {
 	visibility: visible;
 }
 
-.rd-navbar-fixed [class*='rd-navbar-fixed-element'] {
-	position: fixed;
-	top: 4px;
-	z-index: 1092;
-}
+
 
 .rd-navbar-fixed .rd-navbar-fixed-element-1 {
 	right: 0;
