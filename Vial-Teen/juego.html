@@ -42,11 +42,38 @@
             border-radius: 15px;
             width: 350px;
             height: 440px;
+            animation: desplazar;
+             transform: translateX(-900%);
+             animation-duration: 0.4s;
+             animation-delay: 0.1s;
+             animation-fill-mode: forwards;
+        }
+    @keyframes desplazar{
+            from{
+                transform: translateX(-900%);
+            }
+            to{
+                transform: translateX(0);
+            }
         }
 
         .container .img img {
             width: 210px;
+            animation: desplazar;
+             transform: translateX(-900%);
+             animation-duration: 0.4s;
+             animation-delay: 0.3s;
+             animation-fill-mode: forwards;
         }
+    @keyframes desplazar{
+            from{
+                transform: translateX(-900%);
+            }
+            to{
+                transform: translateX(0);
+            }
+        }
+        
 
         .container .buttons {
             display: grid;
