@@ -1,0 +1,786 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: url('../images/Fondo.gif') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 250vh;
+}
+@media (max-width: 768px){
+    html{
+        overflow: hidden;
+    }
+    body {
+        width: 100%;
+        height: 750px;
+    }
+}
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+.header-index {
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/ojo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.header-test {
+    background-color: #292929;
+}
+
+.header-ishihara {
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/ojoishihara.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.header-farnsworth {
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/ojofarns.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.header-anteojos {
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/ojoanteojo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    justify-content: left;
+    padding: 30px 50px 0 0;
+    align-items: center;
+    display: flex;
+}
+
+@media(max-width: 450px) {
+    
+    header nav {
+        padding: 0;
+    }
+}
+
+nav>a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+nav>a:hover {
+    text-decoration: underline grey;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+header .textos-header-ishihara {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header-ishihara {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+header .textos-header-farnsworth {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header-farnsworth {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.textos-header {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* About test */
+
+.contenedor-sobre-nosotros {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    animation: desplazar;
+    transform: translateX(-100%);
+    animation-duration: 1.0s;
+    animation-delay: 1.0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes desplazar {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 450px) {
+    .contenedor-sobre-nosotros {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 820px) {
+    .img-about-us {
+        width: 300px;
+    }
+}
+
+.contenido-texto-pro {
+    padding: 50px;
+}
+
+.h3titulo {
+    font-size: 25px;
+}
+
+.boxtest {
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 28px;
+}
+
+button {
+    margin: 10px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: rgb(104, 103, 102);
+    transform: scale(1.1);
+}
+.boxjugar p{
+    color: #ffffff;
+}
+/* Galeria */
+
+.portafolio {
+    background-color: #f2f2f2;
+    ;
+}
+
+.galeria-port {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imagen-port {
+    width: 30%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    height: 365px;
+    border-radius: 10px;
+}
+
+@media (max-width: 450px) {
+    .imagen-port {
+        width: 80%;
+    }
+}
+
+
+.imagen-port>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(227, 51%, 41%, 0.7);
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width: 50px;
+}
+
+.hover-galeria p {
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.imagen-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+/* Footer */
+
+footer {
+    background-color: #292929;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    margin: auto;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.content-foo {
+    text-align: center;
+
+}
+
+.content-foo h4 {
+    color: #ffffff;
+    border-bottom: 3px solid #2a2f74;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: #ffffff;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #9e9797;
+}
+
+.logowhats {
+    width: 70px;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: 1s;
+}
+
+.logowhats:hover {
+    width: 80px;
+}
+
+/*resultado*/
+#resultado {
+    display: grid;
+    justify-items: center;
+}
+
+#dis4 {
+    display: none;
+}
+
+#dis5 {
+    display: none;
+}
+
+#dis3 {
+    display: none;
+}
+
+.divres {
+    justify-items: center;
+}
+
+.tiposd {
+    width: 350px;
+}
+
+/*TEST ishihara*/
+
+.boxjugar {
+    display: grid;
+    justify-items: center;
+    background: transparent;
+    backdrop-filter: blur(9px);
+    margin: 70px;
+    border: 0.5px solid;
+    border-radius: 15px;
+    width: 200px 200px;
+    height: 600px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.boxboton {
+    border-radius: 50px;
+    transition: all 2s;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.botonsiguiente {
+    transform: scale(1.1);
+    background-color: white;
+    border: solid 2px #B2C8FF;
+    display: none;
+}
+
+.navtest {
+    justify-content: left;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+}
+
+/*test farnsworth*/
+.color {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: move;
+    border: 1px solid black;
+}
+
+.droptarget {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+#check-btn {
+    display: block;
+    margin-top: 20px;
+}
+
+#color85 {
+    background-color: #fc9e9f;
+}
+
+#color1 {
+    background-color: #fe9f9d;
+}
+
+#color2 {
+    background-color: #ffa090;
+}
+
+#color3 {
+    background-color: #fba58e;
+}
+
+#color4 {
+    background-color: #fea386;
+}
+
+#color5 {
+    background-color: #fcab80;
+}
+
+#color6 {
+    background-color: #fea984;
+}
+
+#color7 {
+    background-color: #fead76;
+}
+
+#color8 {
+    background-color: #fbaf7b;
+}
+
+#color9 {
+    background-color: #ffb075;
+}
+
+#color10 {
+    background-color: #feb475;
+}
+
+#color11 {
+    background-color: #fdbb67;
+}
+
+#color12 {
+    background-color: #fdbb6f;
+}
+
+#color13 {
+    background-color: #fdbf5c;
+}
+
+#color14 {
+    background-color: #fdc25a;
+}
+
+#color15 {
+    background-color: #fdca54;
+}
+
+#color16 {
+    background-color: #ffca60;
+}
+
+#color17 {
+    background-color: #fccc5d;
+}
+
+#color18 {
+    background-color: #ffcb5b;
+}
+
+#color19 {
+    background-color: #fad560;
+}
+
+#color20 {
+    background-color: #f8d55f;
+}
+
+#color21 {
+    background-color: #f3d960;
+}
+
+#color22 {
+    background-color: #e8e45f;
+}
+
+#color23 {
+    background-color: #e0de77;
+}
+
+#color24 {
+    background-color: #d9dd6e;
+}
+
+#color25 {
+    background-color: #d2e37b;
+}
+
+#color26 {
+    background-color: #c4dd78;
+}
+
+#color27 {
+    background-color: #bbdd7c;
+}
+
+#color28 {
+    background-color: #b5dd7d;
+}
+
+#color29 {
+    background-color: #b5db84;
+}
+
+#color30 {
+    background-color: #a1dc8c;
+}
+
+#color31 {
+    background-color: #9edc87;
+}
+
+#color32 {
+    background-color: #96de8c;
+}
+
+#color33 {
+    background-color: #87de8f;
+}
+
+#color34 {
+    background-color: #7bdc97;
+}
+
+#color35 {
+    background-color: #83dd97;
+}
+
+#color36 {
+    background-color: #73dd9d;
+}
+
+#color37 {
+    background-color: #6adca9;
+}
+
+#color38 {
+    background-color: #69dbaa;
+}
+
+#color39 {
+    background-color: #6ddab1;
+}
+
+#color40 {
+    background-color: #63e2b9;
+}
+
+#color41 {
+    background-color: #5fe0ba;
+}
+
+#color42 {
+    background-color: #59dfba;
+}
+
+#color43 {
+    background-color: #5ce1c2;
+}
+
+#color44 {
+    background-color: #68dbcc;
+}
+
+#color45 {
+    background-color: #57dfd1;
+}
+
+#color46 {
+    background-color: #4de1d3;
+}
+
+#color47 {
+    background-color: #40e5d5;
+}
+
+#color48 {
+    background-color: #4de2dc;
+}
+
+#color49 {
+    background-color: #4ee3df;
+}
+
+#color50 {
+    background-color: #57dce1;
+}
+
+#color51 {
+    background-color: #5bd6e8;
+}
+
+#color52 {
+    background-color: #61dcec;
+}
+
+#color53 {
+    background-color: #5bd5ec;
+}
+
+#color54 {
+    background-color: #6ccfee;
+}
+
+#color55 {
+    background-color: #7fcae7;
+}
+
+#color56 {
+    background-color: #7bc9ef;
+}
+
+#color57 {
+    background-color: #84c4f0;
+}
+
+#color58 {
+    background-color: #84c4e8;
+}
+
+#color59 {
+    background-color: #87c1ef;
+}
+
+#color60 {
+    background-color: #8dbcf0;
+}
+
+#color61 {
+    background-color: #8ebcee;
+}
+
+#color62 {
+    background-color: #97b8ee;
+}
+
+#color63 {
+    background-color: #a8b6f3;
+}
+
+#color64 {
+    background-color: #a6b3ea;
+}
+
+#color65 {
+    background-color: #abb1e5;
+}
+
+#color66 {
+    background-color: #aeafe5;
+}
+
+#color67 {
+    background-color: #c0aee0;
+}
+
+#color68 {
+    background-color: #c0aee2;
+}
+
+#color69 {
+    background-color: #c6abe2;
+}
+
+#color70 {
+    background-color: #ceaedf;
+}
+
+#color71 {
+    background-color: #d4afdb;
+}
+
+#color72 {
+    background-color: #daacdb;
+}
+
+#color73 {
+    background-color: #e3a9dc;
+}
+
+#color74 {
+    background-color: #e8aadd;
+}
+
+#color75 {
+    background-color: #ebaad4;
+}
+
+#color76 {
+    background-color: #eaa9d1;
+}
+
+#color77 {
+    background-color: #ebaacc;
+}
+
+#color78 {
+    background-color: #eea8ca;
+}
+
+#color79 {
+    background-color: #eea7c7;
+}
+
+#color80 {
+    background-color: #f8a3c2;
+}
+
+#color81 {
+    background-color: #fd9ebc;
+}
+
+#color82 {
+    background-color: #fda2b4;
+}
+
+#color83 {
+    background-color: #ff9ea6;
+}
+
+#color84 {
+    background-color: #fc9e9f;
+}

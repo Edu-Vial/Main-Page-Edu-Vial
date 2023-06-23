@@ -1,4 +1,10 @@
 @charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all 0.5s;
+}
 /*
 * Trunk version 2.0.1
 */
@@ -1584,24 +1590,7 @@ hr {
 * Buttons
 */
 .button {
-	position: relative;
-	overflow: hidden;
-	display: inline-block;
-	padding: 11px 35px;
-	font-size: 14px;
-	line-height: 1.25;
-	border: 1px solid;
-	font-family: "Poppins", sans-serif;
-	font-weight: 700;
-	letter-spacing: 0.23em;
-	text-transform: uppercase;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	text-align: center;
-	cursor: pointer;
-	vertical-align: middle;
-	user-select: none;
-	transition: 250ms all ease-in-out;
+	
 }
 
 .button-width-210 {
