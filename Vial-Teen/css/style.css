@@ -5919,7 +5919,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-collapse-toggle span, .rd-navbar-collapse-toggle span:before, .rd-navbar-collapse-toggle span:after {
-	
+	position: absolute;
 	width: 6px;
 	height: 6px;
 	line-height: 6px;
@@ -6789,7 +6789,29 @@ html.tablet .ui-to-top {
 	visibility: visible;
 }
 
+.rd-navbar-fixed .rd-navbar-fixed-element-1 {
+	right: 0;
+}
 
+.rd-navbar-fixed .rd-navbar-fixed-element-2 {
+	right: 46px;
+}
+
+.rd-navbar-fixed.rd-navbar--is-clone {
+	display: none;
+}
+.rd-navbar-fixed [class*='rd-navbar-fixed-element'] {
+	position: fixed;
+	top: 4px;
+	z-index: 1092;
+}
+.rd-navbar-fixed .rd-navbar-fixed--visible {
+	display: block;
+}
+
+.rd-navbar-fixed .rd-navbar-fixed--hidden {
+	display: none;
+}
 
 
 
