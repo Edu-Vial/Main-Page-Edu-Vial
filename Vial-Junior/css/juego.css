@@ -6,20 +6,68 @@
 }
 
 body {
-    background: url('../images/Fondo.gif') no-repeat center center;
+    background: url('../img/Fondo.gif') no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 250vh;
+    height: 100%;
 }
-@media (max-width: 768px){
-    html{
+
+@media (max-width: 768px) {
+    html {
         overflow: hidden;
     }
+
     body {
         width: 100%;
         height: 750px;
     }
+    button {
+        margin: 10px;
+        width: 300px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.3s;
+    }
+    
+    button:hover {
+        background: rgb(104, 103, 102);
+        transform: scale(1.1);
+    }
+    
+    .boxjugar p {
+        color: #ffffff;
+    }
+    .buttons{
+        align-items: center;
+        text-align: center;
+    }
+    .buttons .botonsiguiente{
+        align-items: center;
+        text-align: center;
+    }
+    .botonsiguiente {
+        display: none;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .boxjugar {
+        display: grid;
+        justify-items: center;
+        background: transparent;
+        backdrop-filter: blur(9px);
+        margin: 30px 0px 0px 50px;
+        border: 0.5px solid;
+        border-radius: 15px;
+        width: 400px;
+        height: 658px;
+        padding: 10px;
+        text-align: center;
+    }
 }
+
 .contenedor {
     padding: 60px 0;
     width: 90%;
@@ -90,7 +138,7 @@ nav {
 }
 
 @media(max-width: 450px) {
-    
+
     header nav {
         padding: 0;
     }
@@ -215,7 +263,7 @@ header .textos-header-farnsworth {
     margin: 28px;
 }
 
-button {
+/* button {
     margin: 10px;
     width: 300px;
     height: 40px;
@@ -228,9 +276,26 @@ button:hover {
     background: rgb(104, 103, 102);
     transform: scale(1.1);
 }
-.boxjugar p{
+
+.boxjugar p {
     color: #ffffff;
 }
+.buttons{
+    align-items: center;
+    text-align: center;
+}
+.buttons .botonsiguiente{
+    align-items: center;
+    text-align: center;
+}
+.botonsiguiente {
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+} */
+
 /* Galeria */
 
 .portafolio {
@@ -384,20 +449,20 @@ a {
 
 /*TEST ishihara*/
 
-.boxjugar {
+/* .boxjugar {
     display: grid;
     justify-items: center;
     background: transparent;
     backdrop-filter: blur(9px);
-    margin: 70px;
+    margin: 30px 0px 0px 85px;
     border: 0.5px solid;
     border-radius: 15px;
-    width: 200px 200px;
-    height: 600px;
+    width: 400px;
+    height: 650px;
     padding: 20px;
     text-align: center;
-    
-}
+
+} */
 
 .boxboton {
     border-radius: 50px;
@@ -407,12 +472,7 @@ a {
     right: 10px;
 }
 
-.botonsiguiente {
-    transform: scale(1.1);
-    background-color: white;
-    border: solid 2px #B2C8FF;
-    display: none;
-}
+
 
 .navtest {
     justify-content: left;

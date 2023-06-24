@@ -14,7 +14,6 @@ function bien(id)
 	document.getElementById("btn2").disabled = true;
 	document.getElementById("btn3").disabled = true;
 	document.getElementById("btn4").disabled = true;
-	document.getElementById("btn5").disabled = true;
 
 	if (respuestacorrecta == document.getElementById(id).innerHTML)
 	{
@@ -30,33 +29,30 @@ function campregunta()
 /*Preguntas*/
 		contador = contador + 1;
 	if (contador == 2) {
-		document.getElementById("imgpregunta").src="img/test2.png";
-		document.getElementById("btn1").innerHTML="10";
-		document.getElementById("btn2").innerHTML="15";
-		document.getElementById("btn3").innerHTML="9";
-		document.getElementById("btn4").innerHTML="No distingo ningún número";
-		document.getElementById("btn5").innerHTML="Ninguno de los anteriores";
-		respuestacorrecta= "15";
+		document.getElementById("imgpregunta").src="img/prohibido-estacionar.png",
+		document.getElementById("btn1").innerHTML="Escuela en frete";
+		document.getElementById("btn2").innerHTML="Prohibido estacionar";
+		document.getElementById("btn3").innerHTML="Detenerse";
+		document.getElementById("btn4").innerHTML="Tren";
+		respuestacorrecta= "Prohibido estacionar";
 	}
 
 	if (contador == 3) {
-		document.getElementById("imgpregunta").src="img/test3.jpg";
-		document.getElementById("btn1").innerHTML="96";
-		document.getElementById("btn2").innerHTML="36";
-		document.getElementById("btn3").innerHTML="5";
-		document.getElementById("btn4").innerHTML="No distingo ningún número";
-		document.getElementById("btn5").innerHTML="Ninguno de los anteriores";
-		respuestacorrecta= "5";
+		document.getElementById("imgpregunta").src="img/tren.png";
+		document.getElementById("btn1").innerHTML="Tren en frente";
+		document.getElementById("btn2").innerHTML="Prohibido estacionar y detenerse";
+		document.getElementById("btn3").innerHTML="Detenerce";
+		document.getElementById("btn4").innerHTML="Niños jugando";
+		respuestacorrecta= "Tren en frente";
 	}
 
 		if (contador == 4) {
-		document.getElementById("imgpregunta").src="img/test4.jpg";
-		document.getElementById("btn1").innerHTML="74";
-		document.getElementById("btn2").innerHTML="2";
-		document.getElementById("btn3").innerHTML="15";
-		document.getElementById("btn4").innerHTML="No distingo ningún número";
-		document.getElementById("btn5").innerHTML="Ninguno de los anteriores";
-		respuestacorrecta= "2";
+		document.getElementById("imgpregunta").src="img/contramano.png";
+		document.getElementById("btn1").innerHTML="Tren";
+		document.getElementById("btn2").innerHTML="Contra mano";
+		document.getElementById("btn3").innerHTML="Prohibido estacionar y deneterne";
+		document.getElementById("btn4").innerHTML="Escuela en frente";
+		respuestacorrecta= "Contra mano";
 	}
 
 		if (contador == 5) {
@@ -65,7 +61,6 @@ function campregunta()
 		document.getElementById("btn2").innerHTML="8";
 		document.getElementById("btn3").innerHTML="9";
 		document.getElementById("btn4").innerHTML="No distingo ningún número";
-		document.getElementById("btn5").innerHTML="Ninguno de los anteriores";
 		respuestacorrecta= "6";
 	}
 	if (contador == 6) {
