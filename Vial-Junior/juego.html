@@ -1,146 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego</title>
-</head>
-<style>
-    		*{
-		box-sizing: border-box;
-		margin: 0;
-		transition: all 2s;
-	}
-header{
-	position: fixed;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	justify-items: start;
-	background-color: #b0f2c2;
-}
-header .logo
-{
-	margin: 0;
-	padding: 25px 30px;
-	font-weight: bold;
-	color: #00C5FF;
-	font-size: 1.6em;
-}
-header .container
-{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-header .nav
-{
-	display: flex;
-	flex-direction: column;
-    text-align: center;
-	padding-bottom: 25px;
-}
-header a
-{
-	padding: 5px 12px;
-	text-decoration: none;
-	font-weight: bold;
-	color: white;
-	transition: all 1s;
-	font-size: 20px;
-}
-header a:hover
-{
-	transform: scale(1.1);
-}
-header h2
-{
-	
-	color: white;
-}
-.boxa{
-	text-align: center;
-	border: 2px solid rgb(252, 71, 71);
-	border-radius: 30px;
-	background: rgb(214, 3, 3);
-	display: inline-flex;
-	align-items: center;
-}
-.boxa:hover{
-	background-color: rgb(245, 13, 13);
-}
-.boxani3{
-	text-align: center;
-	border: 2px solid rgb(252, 71, 71);
-	border-radius: 30px;
-	display: inline-flex;
-	align-items: center;
-	margin-left: 20px;
-	color: white;
-	background: rgb(214, 3, 3);
-}
-.boxani3:hover{
-	background-color: rgb(245, 13, 13);
-}
-.boxani{
-	text-align: center;
-	border: 2px solid rgb(252, 71, 71);
-	border-radius: 30px;
-	background: rgb(214, 3, 3);
-	display: inline-flex;
-	align-items: center;
-	margin-left: 30px;
-}
-.boxani:hover{
-	background-color: rgb(245, 13, 13);
-}
-nav{
-	display: inline-flex;
-	align-items: center;
-	padding: 10px;
-	animation: desplazar;
-            transform: translateX(-300%);
-            animation-duration: 0.5s;
-            animation-delay: 0.2s;
-            animation-fill-mode: forwards;
-        }
-        @keyframes desplazar{
-            from{
-                transform: translateX(-300%);
-            }
-            to{
-                transform: translateX(0);
-            }
-        }
-        .hero{
-          
-        }
-</style>
-<body>
-    <header id="header">
-        <div class="container">
-                <section class="container">
-                <a href="#" id="boxa"><p class="logo">EduVial Jr</p></a>
-                </div>
-                <div>
-                    <nav>
-                        <a href="señalizacion.html" class="boxa"><img src="img/señal.png" width="34px">SEÑALIZACION</a>
-                        <a href="#Sobre-nosotros" class="boxani3"><img src="img/personita.png" width="20px"> SOBRE NOSOTROS</a>
-                        <a href="juego.html" class="boxani"><img src="img/juego.png" width="30px" height="30px"> JUEGO</a>
-                    </nav>
-                </div>
-            </section>
-            </div>
-    </header>
-    <section class="hero">
-        <div class="container">
-            
-        </div>
-    </section>
-    
+<html>
+	<head>
+		<title>Juego</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Daltovisto es un proyecto que busca concientizar y detectar el daltonismo">
+		<meta name="keyboard" content="daltonismo, vista, vision, daltovisto, dislexia, ishihara, John Dalton, ojo, ocular, emfermedad, test de daltonismo">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/juego.css">
+		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+		<meta property="og:title" content="Daltovisto-sitio web sobre daltonismo">
+		<meta property="og:image" content="http://daltovisto.com.ar">
+		<meta property="og:author" content="Agustina Esteban, Bruno Sestúa y Juan Irigoyen">
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-    </div>
-</body>
-</html>
+		gtag('config', 'G-7GC3DGMSS0');
+		</script>
+	</head>
+	<body>
+		<main class="boxjugar">
+			<br>
+			<p>Número de preguntas:</p>
+			<br>
+			<p id="npregunta"></p>
+			<p>¿Que número distinguís?</p>
+			<img id="imgpregunta" src="img/.jpg" width="200" height="200">
+			<p id="textocorrecto"></p>
+			<p>Respuestas correctas:</p>
+			<p id="contadorcorrecta">0</p>
+			
+
+			<button id="btn1" onclick="bien(id)"  class="botones">8</button>
+			<button id="btn2"  onclick="bien(id)" class="botones">12</button>
+			<button id="btn3" onclick="bien(id)"  class="botones">24</button>
+			<button id="btn4" onclick="bien(id)"  class="botones">No distingo ningún número</button>
+			<button id="btn5" onclick="bien(id)"  class="botones">Ninguno de los anteriores</button>
+			<button  id="btnsiguiente" class="botonsiguiente" onclick="campregunta()">Siguiente pregunta</button>
+			<br>
+
+			<a href="resultado.html"><button class="botonsiguiente" id="btnres">Ver resultados</button></a>
+		</main>
+
+		<script type="text/javascript" src="js/juego.js" ></script>
+	</body>
+</html
