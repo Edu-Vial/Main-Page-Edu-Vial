@@ -1,6 +1,6 @@
 var contador = 1;
 var contadorcorrecta = 0;
-var respuestacorrecta = "12";
+var respuestacorrecta = "Detenerse";
 var respuestaincorrecta = "distingo";
 
 document.getElementById("npregunta").innerHTML= contador;
@@ -95,6 +95,5 @@ function campregunta()
 	}
 
 	
-	
-	
 }
+
