@@ -26,11 +26,16 @@ header{
     width: 100%;
     height: 80px;
     background: #f5f5f5;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1000px;
     align-items: center;
     position: fixed;
     top: 0;
     z-index: 200;
+}
+
+p {
+    font-size: 23px;
 }
 
 .icon__menu{
@@ -43,7 +48,7 @@ header{
 }
 
 .icon__menu i{
-    font-size: 20px;
+    font-size: 26px;
     cursor: pointer;
     position: absolute;
 }
