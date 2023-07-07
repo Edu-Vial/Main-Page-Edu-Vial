@@ -160,9 +160,18 @@ a.selected{
     .body_move{
         margin-left: 0px;
     }
-
+    
     .menu__side_move{
         width: 80px;
         left: -80px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+    }
+
+    p {
+        font-size: 17px;
     }
 }
