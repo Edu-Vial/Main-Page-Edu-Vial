@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Juego</title>
-		<meta charset="utf-8">
-		<meta name="description" content="Daltovisto es un proyecto que busca concientizar y detectar el daltonismo">
-		<meta name="keyboard" content="daltonismo, vista, vision, daltovisto, dislexia, ishihara, John Dalton, ojo, ocular, emfermedad, test de daltonismo">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/juego.css">
-		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
-		<meta property="og:title" content="Daltovisto-sitio web sobre daltonismo">
-		<meta property="og:image" content="http://daltovisto.com.ar">
-		<meta property="og:author" content="Agustina Esteban, Bruno Sestúa y Juan Irigoyen">
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
-		<script>
+
+<head>
+	<title>Juego</title>
+	<meta charset="utf-8">
+	<meta name="description"
+		content="Edu-Vial es un proyecto que busca el aprendizaje y educacion de los niños y adolecentes sobre la educacion vial">
+	<meta property="og:title" content="Edu-Vial, web sobre Educacion Vial">
+	<meta property="og:image" content="http://www.edu-vial.com.ar">
+	<meta property="og:author" content="Joel Melini, Santino De santis, Ludmila Lopardo, Cecica Perez, Federico Solan">
+	<meta name="keyboard" content="Educacion, Vial, Educacion-vial, Edu-Vial, Señales, Registro, Gobierno, Leyes">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/juego.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GC3DGMSS0"></script>
+	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
 		gtag('config', 'G-7GC3DGMSS0');
-		</script>
-	</head>
-	<body>
-		<main class="boxjugar">
-			<br>
-			<p>Número de preguntas:</p>
-			<br>
-			<p id="npregunta"></p>
-			<p>¿Que número distinguís?</p>
-			<img id="imgpregunta" src="img/stop.png" width="200" height="200">
-			<p id="textocorrecto"></p>
-			<p>Respuestas correctas:</p>
-			<p id="contadorcorrecta">0</p>
-			
+	</script>
+</head>
 
-			<button id="btn1" onclick="bien(id)"  class="botones">Prohibido estacionar</button>
-			<button id="btn2"  onclick="bien(id)" class="botones">Detenerse</button>
-			<button id="btn3" onclick="bien(id)"  class="botones">Escuela en frente</button>
-			<button id="btn4" onclick="bien(id)"  class="botones">Niños jugando</button>
-			<button  id="btnsiguiente" class="botonsiguiente" onclick="campregunta()">Siguiente pregunta</button>
-			<br>
-			<a href="resultado.html"><button class="botonsiguiente" id="btnres">Ver resultados</button></a>
-		</main>
+<body>
+	<main class="boxjugar">
+		<br>
+		<p>Número de preguntas:</p>
+		<br>
+		<p id="npregunta"></p>
+		<p>¿Que número distinguís?</p>
+		<img id="imgpregunta" src="img/stop.png" width="200" height="200">
+		<p id="textocorrecto"></p>
+		<p>Respuestas correctas:</p>
+		<p id="contadorcorrecta">0</p>
 
-		<script type="text/javascript" src="js/juego.js" ></script>
-	</body>
+
+		<button id="btn1" onclick="bien(id)" class="botones">Prohibido estacionar</button>
+		<button id="btn2" onclick="bien(id)" class="botones">Detenerse</button>
+		<button id="btn3" onclick="bien(id)" class="botones">Escuela en frente</button>
+		<button id="btn4" onclick="bien(id)" class="botones">Niños jugando</button>
+		<button id="btnsiguiente" class="botonsiguiente" onclick="campregunta()">Siguiente pregunta</button>
+		<br>
+		<a href="resultado.html"><button class="botonsiguiente" id="btnres">Ver resultados</button></a>
+	</main>
+
+	<script type="text/javascript" src="js/juego.js"></script>
+</body>
+
 </html

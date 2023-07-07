@@ -154,7 +154,11 @@ main {
         padding: 30px;
     }
 }
-
+a {
+    color: rgb(202, 198, 198);
+    text-decoration: none;
+    
+}
 @media (max-width: 767px) {
     body {
         width: 100%;
