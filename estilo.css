@@ -5,6 +5,7 @@
     font-family: "Poppins", sans-serif;
     transition: all 1s;
 }
+
 body {
     background: url('images/Fondo.gif') no-repeat center center;
     background-size: cover;
@@ -51,9 +52,11 @@ main {
 .seccion1:hover {
     transform: scale(1.1);
 }
+
 .seccion1 img:hover {
     transform: scale(1.2);
 }
+
 .seccion2 {
     transition: all 0.5s;
 }
@@ -61,15 +64,19 @@ main {
 .seccion2:hover {
     transform: scale(1.1);
 }
-.seccion2 img:hover{
+
+.seccion2 img:hover {
     transform: scale(1.2);
 }
+
 .seccion3 {
     transition: all 0.5s;
 }
-.seccion3 img:hover{
+
+.seccion3 img:hover {
     transform: scale(1.1);
 }
+
 .seccion3:hover {
     transform: scale(1.1);
 }
@@ -123,6 +130,20 @@ main {
     background-color: rgb(189, 180, 180);
 }
 
+h3 a {
+    color: rgb(156, 151, 151);
+    text-decoration: none;
+}
+
+h3 a:hover {
+    color: rgb(68, 68, 205);
+}
+
+h3 {
+    margin: 30px;
+    font-size: 20px;
+}
+
 @media (width: 320px) {
     body {
         width: 100%;
@@ -154,11 +175,7 @@ main {
         padding: 30px;
     }
 }
-a {
-    color: rgb(202, 198, 198);
-    text-decoration: none;
-    
-}
+
 @media (max-width: 767px) {
     body {
         width: 100%;
@@ -186,6 +203,7 @@ a {
     .seccion1 {
         padding: 10px;
     }
+
     .seccion1 button {
         padding: 15px;
     }

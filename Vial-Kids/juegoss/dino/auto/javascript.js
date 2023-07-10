@@ -71,6 +71,10 @@ function Start() {
     document.addEventListener("keydown", HandleKeyDown);
 }
 
+function click() {
+    document.addEventListener("click", HandleKeyDown)
+}
+
 function Update() {
     if(parado) return;
     
