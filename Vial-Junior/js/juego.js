@@ -1,6 +1,6 @@
 var contador = 1;
 var contadorcorrecta = 0;
-var respuestacorrecta = "12";
+var respuestacorrecta = "Detenerse";
 var respuestaincorrecta = "distingo";
 
 document.getElementById("npregunta").innerHTML= contador;
@@ -31,12 +31,11 @@ function campregunta()
 		contador = contador + 1;
 	if (contador == 2) {
 		document.getElementById("imgpregunta").src="img/test2.png";
-		document.getElementById("btn1").innerHTML="10";
-		document.getElementById("btn2").innerHTML="15";
-		document.getElementById("btn3").innerHTML="9";
-		document.getElementById("btn4").innerHTML="No distingo ningún número";
-		document.getElementById("btn5").innerHTML="Ninguno de los anteriores";
-		respuestacorrecta= "15";
+		document.getElementById("btn1").innerHTML="Prohibido estacionar";
+		document.getElementById("btn2").innerHTML="Detenerce";
+		document.getElementById("btn3").innerHTML="Loma de burro";
+		document.getElementById("btn4").innerHTML="Niños jugando";
+		respuestacorrecta= "Prohibido estacionar";
 	}
 
 	if (contador == 3) {
