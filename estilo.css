@@ -144,6 +144,20 @@ h3 {
     font-size: 20px;
 }
 
+html {
+    overflow: hidden;
+}
+
+#Marca {
+    position: relative;
+    top: 90px;
+    left: 43rem;
+}
+
+#Marca p {
+    color: #aaa9a9;
+}
+
 @media (width: 320px) {
     body {
         width: 100%;
