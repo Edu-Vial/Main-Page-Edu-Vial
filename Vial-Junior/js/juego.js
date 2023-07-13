@@ -30,7 +30,7 @@ function campregunta()
 /*Preguntas*/
 		contador = contador + 1;
 	if (contador == 2) {
-		document.getElementById("imgpregunta").src="img/test2.png";
+		document.getElementById("imgpregunta").src="img/prohibido-estacionar.png";
 		document.getElementById("btn1").innerHTML="Prohibido estacionar";
 		document.getElementById("btn2").innerHTML="Detenerce";
 		document.getElementById("btn3").innerHTML="Loma de burro";
@@ -39,13 +39,13 @@ function campregunta()
 	}
 
 	if (contador == 3) {
-		document.getElementById("imgpregunta").src="img/test3.jpg";
-		document.getElementById("btn1").innerHTML="96";
-		document.getElementById("btn2").innerHTML="36";
-		document.getElementById("btn3").innerHTML="5";
-		document.getElementById("btn4").innerHTML="No distingo ningún número";
+		document.getElementById("imgpregunta").src="img/contramano.png";
+		document.getElementById("btn1").innerHTML="Escuela en frente";
+		document.getElementById("btn2").innerHTML="Detenerse";
+		document.getElementById("btn3").innerHTML="Contra mano";
+		document.getElementById("btn4").innerHTML="Animales sueltos";
 		document.getElementById("btn5").innerHTML="Ninguno de los anteriores";
-		respuestacorrecta= "5";
+		respuestacorrecta= "Contra mano";
 	}
 
 		if (contador == 4) {
