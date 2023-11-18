@@ -119,7 +119,7 @@ body {
 }
 
 
-@media (300px <= width <=1000px) {
+@media (360px <= width <= 640px) {
   .container .swiper-slide {
     position: relative;
     left: -80px;
@@ -127,16 +127,16 @@ body {
 
   #vial-kids {
     position: relative;
-    left: 100px;
+    left: 30px;
   }
 
   #vial-junior {
     position: relative;
-    left: 120px;
+    left: 40px;
   }
 
   #edu-vial {
     position: relative;
-    left: 120px;
+    left: 40px;
   }
 }
