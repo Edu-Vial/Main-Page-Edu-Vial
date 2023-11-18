@@ -11,48 +11,75 @@
     <meta name="keyboard" content="Educacion, Vial, Educacion-vial, Edu-Vial, Señales, Registro, Gobierno, Leyes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma Edu-Vial</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="icon" href="images/Icono.png">
 </head>
 <body>
-    <main>
-        <div class="container">
-            <div class="edu">
-                <h2>Plataforma</h2> <h1>Edu-Vial</h1>
-                <h2>Selecciona tu Página favorita</h2>
-                <div class="vial">
-                    <!--Vial kids-->
-                    <div class="seccion1">
-                        <img src="images/logo-VialKids.png" alt="Vial Kids" width="100px">
-                        <h2><u>Vial Kids</u></h2>
-                        <p>Desafios y activadades para estudiantes de 1° ciclo de primaria</p>
-                        <a href="./Proyecto_completo/Vial-Kids/index.html"><button onclick="Kids()">Ingresar</button></a> 
-                    </div>
-                    <!--Edu-Vial JR-->
-                    <div class="seccion2">
-                        <img src="images/Vial-junior.png" alt="Vial Junior" width="98px">
-                        <h2><u>Vial Junior</u></h2>
-                        <p>Desafios y activadades para estudiantes de 2° ciclo de primaria</p>
-                        <a href="./Proyecto_completo/Vial-Junior/primaria.html"><button>Ingresar</button></a>
-                    </div>
-                    <!--Vial Teen-->
-                    <div class="seccion3">
-                        <img src="images/favicon.png" alt="Edu-Vial" width="70px">
-                        <h2><u>Edu-Vial</u></h2>
-                        <p>Desafios y activadades para estudiantes de 1° y 2° ciclo de secundaria</p>
-                        <a href="./Proyecto_completo/Vial-Teen/index.html"><button>Ingresar</button></a>
+     <!-- Swiper -->
+     <div class="container">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-container mySwiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/logo-VialKids.png" alt="VIAL KIDS" id="vial-kids">
+                    <div class="card-descriptions">
+                        <div class="card-title">
+                            <h4>VIAL KIDS</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>Desafios y activadades para estudiantes de 1° ciclo de primaria</p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Ver más</a>
+                        </div>
                     </div>
 
                 </div>
-                <div class="footer">
-                    <center><h3><a href="./Proyecto_completo/wiki/wiki.html">Entra para más info sobre Edu-vial..</a></h3></center>
+                <div class="swiper-slide">
+                    <img src="images/Vial-junior.png" alt="VIAL JUNIOR" id="vial-junior">
+                    <div class="card-description">
+                        <div class="card-title">
+                            <h4>VIAL JUNIOR</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>Desafios y activadades para estudiantes de 2° ciclo de primaria</p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-slide">
+                    <img src="images/favicon.png" alt="EDU VIAL" id="edu-vial" width="50px">
+                    <div class="card-description">
+                        <div class="card-title">
+                            <h4>EDU VIAL</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>Desafios y activadades para estudiantes de 1° y 2° ciclo de secundaria   </p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            <section id="Marca">
-                <p>Edu Vial &copy 2023</p>
-            </section>
+
         </div>
-    </main>
+
+
+
+    </div>
+
+    </div>
+    <!-- Swiper JS -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
     
     <!-- <script defer src="https://app.embed.im/snow.js"></script> -->
 </body>
