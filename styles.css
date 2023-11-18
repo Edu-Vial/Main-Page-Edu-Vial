@@ -120,6 +120,11 @@ body {
 
 
 @media (360px <= width <= 640px) {
+  body {
+    background-size: 550px 660px;
+  }
+
+
   .container .swiper-slide {
     position: relative;
     left: -80px;
@@ -138,5 +143,57 @@ body {
   #edu-vial {
     position: relative;
     left: 40px;
+  }
+}
+
+@media (480px <= width <= 853px) {
+  body {
+    background-size: 600px 980px;
+  }
+
+  .container .swiper-slide {
+    position: relative;
+    left: -80px;
+  }
+
+  #vial-kids {
+    position: relative;
+    left: 80px;
+  }
+
+  #vial-junior {
+    position: relative;
+    left: 90px;
+  }
+
+  #edu-vial {
+    position: relative;
+    left: 100px;
+  }
+}
+
+@media (393px <= width <= 852px) {
+  body {
+    background-size: 800px 2180px;
+  }
+
+  .container .swiper-slide {
+    position: relative;
+    left: -80px;
+  }
+
+  #vial-kids {
+    position: relative;
+    left: 80px;
+  }
+
+  #vial-junior {
+    position: relative;
+    left: 90px;
+  }
+
+  #edu-vial {
+    position: relative;
+    left: 100px;
   }
 }
