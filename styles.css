@@ -197,3 +197,90 @@ body {
     left: 100px;
   }
 }
+
+@media (414px <= width <= 896px) {
+  body {
+    background-size: 800px 2180px;
+  }
+
+  .container .swiper-slide {
+    position: relative;
+    left: -80px;
+  }
+
+  #vial-kids {
+    position: relative;
+    left: 50px;
+  }
+
+  #vial-junior {
+    position: relative;
+    left: 70px;
+  }
+
+  #edu-vial {
+    position: relative;
+    left: 60px;
+  }
+}
+@media (810px <= width <= 1080px) {
+  body {
+    background-size: 820px 2180px;
+  }
+
+  #Title {
+    left: 340px;
+    top: -460px;
+  }
+
+  .container .swiper-slide {
+    position: relative;
+    left: -60px;
+  }
+
+  #vial-kids {
+    position: relative;
+    left: 50px;
+  }
+
+  #vial-junior {
+    position: relative;
+    left: 70px;
+  }
+
+  #edu-vial {
+    position: relative;
+    left: 60px;
+  }
+}
+
+@media (1280px <= width <= 720px) {
+  body {
+    background-size: 820px 2180px;
+  }
+
+  #Title {
+    left: 140px;
+    top: -460px;
+  }
+
+  .container .swiper-slide {
+    position: relative;
+    left: -60px;
+  }
+
+  #vial-kids {
+    position: relative;
+    left: -50px;
+  }
+
+  #vial-junior {
+    position: relative;
+    left: 90px;
+  }
+
+  #edu-vial {
+    position: relative;
+    left: 60px;
+  }
+}
